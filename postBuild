@@ -1,0 +1,11 @@
+#!/bin/sh
+
+#  postBuild.sh
+#  
+#
+#  Created by Nick Calvert on 18/06/2020.
+#  
+git clone https://github.com/oreillymedia/doing_data_science
+cd doing_data_science
+unzip doing_data_science/dds_datasets.zip
+unzip dds_datasets/dds_ch2_rollingsales.zip
