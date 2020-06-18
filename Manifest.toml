@@ -40,10 +40,12 @@ version = "1.0.0"
 uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
 
 [[BinaryProvider]]
-deps = ["Libdl", "SHA", "Test"]
-git-tree-sha1 = "064e82000969b22b28d2f2a5c1a49da04e601156"
+deps = ["Libdl", "Logging", "Pkg", "SHA"]
+git-tree-sha1 = "a4c58d55ef3ad4c00523510917934ad2fb0ba194"
+repo-rev = "master"
+repo-url = "https://github.com/JuliaPackaging/BinaryProvider.jl"
 uuid = "b99e7846-7c00-51b0-8f62-c81ae34c0232"
-version = "0.5.91"
+version = "0.6.0"
 
 [[Bzip2_jll]]
 deps = ["Libdl", "Pkg"]
@@ -64,10 +66,10 @@ uuid = "324d7699-5711-5eae-9e2f-1d82baa6b597"
 version = "0.8.1"
 
 [[CodecZlib]]
-deps = ["BinaryProvider", "Libdl", "TranscodingStreams"]
-git-tree-sha1 = "05916673a2627dd91b4969ff8ba6941bc85a960e"
+deps = ["TranscodingStreams", "Zlib_jll"]
+git-tree-sha1 = "ded953804d019afa9a3f98981d99b33e3db7b6da"
 uuid = "944b1d66-785c-5afd-91f1-9de20f533193"
-version = "0.6.0"
+version = "0.7.0"
 
 [[CodecZstd]]
 deps = ["TranscodingStreams", "Zstd_jll"]
@@ -953,16 +955,16 @@ deps = ["Distributed", "InteractiveUtils", "Logging", "Random"]
 uuid = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [[TextParse]]
-deps = ["CodecZlib", "DataStructures", "Dates", "DoubleFloats", "Mmap", "Nullables", "WeakRefStrings"]
-git-tree-sha1 = "df02daeb8b9402d3eada898f43423797bb1f84b0"
+deps = ["CodecZlib", "DataStructures", "Dates", "DoubleFloats", "Mmap", "Nullables", "PooledArrays", "WeakRefStrings"]
+git-tree-sha1 = "26b43d6746b52cca13c4cdef90f89652273b413e"
 uuid = "e0df1984-e451-5cb5-8b61-797a481e67e3"
-version = "1.0.0"
+version = "0.9.1"
 
 [[Thrift]]
-deps = ["BinaryProvider", "Distributed", "Sockets"]
-git-tree-sha1 = "c3dd01c6067985a77fef761839203838ac12825b"
+deps = ["BinaryProvider", "Distributed", "Libdl", "Logging", "Sockets", "Test"]
+git-tree-sha1 = "d12121e266b1deb7149ec6ef91aeda521e271446"
 uuid = "8d9c9c80-f77e-5080-9541-c6f69d204e22"
-version = "0.6.2"
+version = "0.6.0"
 
 [[TimeZones]]
 deps = ["Dates", "EzXML", "Mocking", "Printf", "RecipesBase", "Serialization", "Unicode"]
