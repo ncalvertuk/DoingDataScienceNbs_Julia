@@ -8,3 +8,4 @@
 git clone https://github.com/oreillymedia/doing_data_science
 unzip doing_data_science/dds_datasets.zip
 unzip dds_datasets/dds_ch2_rollingsales.zip
+curl -o BoroughBoundaries.geojson "https://data.cityofnewyork.us/api/geospatial/tqmj-j8zm?method=export&format=GeoJSON"
